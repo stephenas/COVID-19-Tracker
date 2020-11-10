@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+}
+
+.app__covidImage {
+  width: 100%;
+  object-fit: contain;
+  max-width: 230px;
+}
+.app__dropdown {
+  background-color: white;
+}
+
+.app {
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  /* padding-bottom: 20px; */
+}
+
+.app__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.app__states {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* border: 1px solid lightgray; */
+}
+
+body {
+  background-color: #f5f6fa;
+}
+
+@media (max-width: 790px) {
+  .app {
+    flex-direction: column;
+  }
+}
+
+.app__left {
+  flex: 0.9;
+}
+
+.app__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 100px solid lightgray;
+}
+
+.flag {
+  width: 100%;
+  object-fit: contain;
+  max-height: 30px;
+  max-width: 30px;
+}
+
+.graphTitle {
+  margin-bottom: 10px;
+}
+
+.app__right {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid lightgray;
+}
+
+.app__right__card {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.MuiCardContent-root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.app__graph {
+  flex-grow: 1;
+}
+
+.lingGraph {
+  flex-grow: 1;
+}

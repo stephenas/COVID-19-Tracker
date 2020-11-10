@@ -1,0 +1,40 @@
+.infoBox__card {
+  /* margin-right: 20px; */
+  flex: 1;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.infoBox__card:not(:last-child) {
+  margin-right: 15px;
+}
+
+.infoBox__cases {
+  color: #57c07f;
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+.infoBox__cases--redCases {
+  color: #e95c5f;
+}
+.infoBox__cases--red {
+  color: #b82925;
+}
+.infoBox__total {
+  color: #6c757d;
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+  margin-top: 15px !important;
+}
+
+.infoBox__card--selected {
+  border-top: 15px solid #57c07f;
+}
+
+.infoBox__card--redCases {
+  border-color: #e95c5f;
+}
+.infoBox__card--red {
+  border-color: #b82925;
+}
