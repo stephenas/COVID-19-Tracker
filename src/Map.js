@@ -2,21 +2,6 @@ import React, { useState } from "react";
 import { MapContainer, TileLayer, Circle, Popup } from "react-leaflet";
 import "./Map.css";
 import numeral from "numeral";
-// import { showDataOnMap } from "./util";
-// const casesTypeColors = {
-//   cases: {
-//     hex: true,
-//     multiplier: 300,
-//   },
-//   recovered: {
-//     hex: true,
-//     multiplier: 400,
-//   },
-//   deaths: {
-//     hex: true,
-//     multiplier: 1500,
-//   },
-// };
 
 function Map({ countries, casesType, center, zoom }) {
   const recovered = casesType === "recovered" && true;
