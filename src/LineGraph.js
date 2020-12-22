@@ -57,10 +57,16 @@ function LineGraph({ casesType, country, ...args }) {
     const chartData = [];
     let previousData;
     for (let date in data.cases) {
-      if (previousData) {
+      if (previousData && data[casesType][date] > previousData) {
         const newData = {
           x: date,
           y: data[casesType][date] - previousData,
+        };
+        chartData.push(newData);
+      } else {
+        const newData = {
+          x: date,
+          y: previousData - data[casesType][date],
         };
         chartData.push(newData);
       }
